@@ -20,9 +20,8 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : MiaoQiaowei's Blog
-description: > # this means to ignore newlines until "Language & timezone"
-  Ez4Max
+title   : O.o
+description: > # this means to ignore newlines until "Language & timezone" Ez4Max
 
 
 ## => Language and Timezone
@@ -46,10 +45,10 @@ author:
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  zhihu     : https://www.zhihu.com/people/qing-feng-xu-lai-55-3# "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : https://github.com/MiaoQiaowei# "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -84,11 +83,11 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
+mathjax: # true (default), true
 mathjax_autoNumber: # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: # true (default), true
 
 ## Chart
 chart: # false (default), true
@@ -206,11 +205,21 @@ defaults:
       path: ""
       type: posts
     values:
+      #layout: Articles - Item (Excerpt + Read More + Info)#article
+      
       layout: article
+      title: Page - Article Header Image (Customized Header Background)
+      header:
+        theme: dark
+        background: '#333'
+      article_header:
+        type: cover
+        image:
+          src: /docs/assets/images/cover3.jpg
       sharing: true
       license: true
       aside:
-        toc: true
+      toc: true
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
