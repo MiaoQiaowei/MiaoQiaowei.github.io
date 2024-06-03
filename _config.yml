@@ -5,13 +5,13 @@ url                          : "" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : dactl
+  title                      : MiaoQiaowei
   description                  : >
-                               this should contain a proper description
+                               A Buddha-like blog
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
-  search_path                : # "yourgitusername.github.io"
+  search_path                : "MiaoQiaowei.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
   hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
@@ -26,11 +26,11 @@ blog:
 
 # Author info
 author:
-  fullname                  : Your Name
+  fullname                  : Qiaowei Miao
   rss                       : true # generate RSS feed and show it's icon in header
-  mail                      : your@email.com # change to your e-mail address
-  twitter                   : twitter-user-name
-  github                    : github-user-name
+  mail                      : QiaoweiMiao@zju.edu.cn # change to your e-mail address
+  twitter                   : wdmmqw
+  github                    : MiaoQiaowei
   youtube                   : youtube-user-name
   stackoverflow             : stackoverflow-user-name
   disqus                    : dactl # your disqus site name
@@ -56,7 +56,7 @@ permalink                    : posts/:slug
 excerpt_separator            : <!–-break-–>
 
 # Pagination
-paginate                     : 5
+paginate                     : 6
 paginate_path                : '/page-:num/'
 
 # Tags
@@ -80,7 +80,8 @@ exclude                    : ["README.md", "README.html"]
 markdown: kramdown
 # !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
 # Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
-highlighter: rouge
+#highlighter: rouge
+highlighter: pygments
 
 # More › http://kramdown.gettalong.org/quickref.html
 # Options › http://kramdown.gettalong.org/options.html
